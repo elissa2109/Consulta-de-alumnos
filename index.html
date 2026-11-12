@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Alumnos - UPEMOR</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card-header">
+      <h2>Consulta de Alumnos</h2>
+      <p>Introduce tu matrícula para buscar en el sistema</p>
+    </div>
+
+    <!-- action redirecciona hacia buscar.php para realizar la consulta -->
+    <form class="search-form" action="buscar.php" method="POST">
+      <div class="input-group">
+        <label for="matricula">Matrícula</label>
+        <input 
+          type="text" 
+          id="matricula" 
+          name="matricula" 
+          placeholder="Ej. A202603" 
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn-primary">Buscar</button>
+    </form>
+
+    <div class="card-footer">
+      <!-- href redirige a la página registrar.html -->
+      <p>¿Quieres registrar un nuevo alumno? <a href="registrar.html">Haz clic aquí</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

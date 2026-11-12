@@ -1,0 +1,52 @@
+/* Mensaje de alerta (Conexión exitosa) */
+.alert-success {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Caja del resultado */
+.result-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.result-text {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.student-name {
+  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Botón secundario para volver */
+.btn-secondary {
+  display: inline-block;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #cbd5e1;
+  color: #0f172a;
+}

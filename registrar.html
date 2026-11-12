@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Nuevo Alumno - UPEMOR</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card-header">
+      <h2>Registro de Alumnos</h2>
+      <p>Ingresa los datos del nuevo alumno</p>
+    </div>
+
+    <!-- El formulario envía los datos mediante POST a registro.php -->
+    <form class="search-form" action="registro.php" method="POST">
+      
+      <div class="input-group">
+        <label for="matricula">Matrícula</label>
+        <input 
+          type="text" 
+          id="matricula" 
+          name="matricula" 
+          placeholder="Ej. A202602" 
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="nombre">Nombre Completo</label>
+        <input 
+          type="text" 
+          id="nombre" 
+          name="nombre" 
+          placeholder="Ej. Ana Gómez" 
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn-primary">Guardar Alumno</button>
+    </form>
+
+    <div class="card-footer">
+      <!-- Enlace para regresar a la página de consulta principal -->
+      <a href="index.html" class="btn-secondary">← Volver a Consulta</a>
+    </div>
+  </div>
+
+</body>
+</html>
